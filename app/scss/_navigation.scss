@@ -1,0 +1,129 @@
+.navigation__main-menu,
+.navigation > input {
+  display: none;
+}
+
+.navigation > label {
+  padding: 0;
+  display: flex;
+  color: #aaaaaa;;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navigation > input:checked + .navigation__main-menu {
+  display: block;
+}
+
+.navigation {
+  display: block;
+  position: relative;
+
+  &__menu-item {
+    padding: 12px 10px;
+    display: block;
+    font: 18px $primary-font;
+  }
+
+  &__icon {
+    font-size: $primary-font-size;
+  }
+
+  &__link {
+    color: #aaaaaa;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__social-icon {
+    display: inline-block;
+  }
+}
+
+
+@media only screen and (min-device-width: 768px) {
+  .navigation {
+    height: auto;
+    //max-width: 600px;
+    //width: 100%;
+
+    &__main-menu {
+      display: block;
+    }
+
+    &__menu-item {
+      display: inline-block;
+      //padding: 60px 25px 25px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    //
+    //&__home--hovered:hover,
+    //&__home--active {
+    //  background-color: $primary-home-page-color;
+    //}
+    //
+    //&__services--hovered:hover,
+    //&__services--active {
+    //  background-color: $secondary-service-page-color;
+    //}
+    //
+    //
+    //&__about--hovered:hover,
+    //&__about--active {
+    //  background-color: $secondary-about-page-color;
+    //}
+    //
+    //
+    //&__work--hovered:hover,
+    //&__work--active {
+    //  background-color: $secondary-work-page-color;
+    //}
+    //
+    //
+    //&__contacts--hovered:hover,
+    //&__contacts--active {
+    //  background-color: #82c8bd;
+    //}
+  }
+
+  .navigation > label {
+    display: none
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  .navigation > input:checked + .navigation__main-menu {
+    position: absolute;
+    right: -20px;
+    top: 30px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 999;
+  }
+
+  //.navigation > input:checked + .navigation__about-main-menu {
+  //  background-color: $secondary-about-page-color;
+  //}
+  //
+  //.navigation > input:checked + .navigation__contact-main-menu {
+  //  background-color: #82c8bd;
+  //}
+  //
+  //.navigation > input:checked + .navigation__home-main-menu {
+  //  background-color: $primary-home-page-color;
+  //}
+  //
+  //.navigation > input:checked + .navigation__services-main-menu {
+  //  background-color: $secondary-service-page-color;
+  //}
+  //
+  //.navigation > input:checked + .navigation__work-main-menu {
+  //  background-color: $secondary-work-page-color;
+  //}
+  //
+  //.navigation > input:checked + .navigation__portfolio-main-menu {
+  //  background-color: #f5c149;
+  //}
+}

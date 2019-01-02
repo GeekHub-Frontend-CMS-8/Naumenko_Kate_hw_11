@@ -1,0 +1,17 @@
+.header {
+  //position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+
+  &__row {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

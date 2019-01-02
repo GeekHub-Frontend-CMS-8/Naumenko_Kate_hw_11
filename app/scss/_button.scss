@@ -1,0 +1,23 @@
+.button {
+  padding: 15px 35px;
+  background-color: transparent;
+  border: 2px solid;
+  
+  &__lite {
+    border-color: #f2f2f2;
+    color: #ffffff;
+    font: 15px "Montserrat-SemiBold", "Helvetica", sans-serif;
+    letter-spacing: 1.5px;
+  }
+
+  &__arrow::after {
+    position: absolute;
+    content: url("../img/Arrow.png");
+    bottom: -45px;
+    left: 46%;
+  }
+
+  &__dark {
+    border-color: #3e3d3d;
+  }
+}

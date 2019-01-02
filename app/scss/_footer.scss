@@ -1,0 +1,44 @@
+.footer {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-contact-page-color;
+
+
+  &__social-icons {
+    max-width: 360px;
+    margin: auto;
+  }
+
+  &__social-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #82c8bd;
+    color: $primary-color;
+    font-size: $fourth-seniority-font-size;
+    cursor: pointer;
+  }
+
+  &__facebook-icon--hovered:hover {
+    background-color: #4f689e;
+  }
+
+  &__twitter-icon--hovered:hover {
+    background-color: $primary-home-page-color;
+  }
+
+  &__google-icon--hovered:hover {
+    background-color: $secondary-service-page-color;
+  }
+
+  &__linkedin-icon--hovered:hover {
+    background-color: #3e61af;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 45px 0;
+  }
+}
