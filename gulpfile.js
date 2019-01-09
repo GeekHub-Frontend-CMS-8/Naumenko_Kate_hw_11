@@ -6,6 +6,7 @@ var pngquant     = require('imagemin-pngquant');
 var cache        = require('gulp-cache');
 var autoprefixer = require('gulp-autoprefixer');
 var del          = require('del');
+var babel        = require('gulp-babel');
 
 gulp.task('sass', function () {
     return gulp.src('app/scss/**/*.scss')
@@ -59,8 +60,19 @@ gulp.task('browser-sync', function () {
     });
 });
 
-gulp.task('watch', [ 'clean', 'browser-sync', 'sass', 'font', 'html', 'img'], function () {
+gulp.task('js', function () {
+
+    return gulp.src([
+        'node_modules/shufflejs/dist/shuffle.min.js',
+        'app/js/**/*.js'
+        ])
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('watch', [ 'clean', 'browser-sync', 'sass', 'font', 'html', 'js', 'img'], function () {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/**/*.html' , ['html'], browserSync.reload);
     gulp.watch('app/img/**/*', ['img'], browserSync.reload);
+    gulp.watch('app/js/**/*.js', ['js']);
 });

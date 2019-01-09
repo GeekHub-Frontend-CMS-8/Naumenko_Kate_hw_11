@@ -1,0 +1,13 @@
+.prices {
+  background-color: #e3e3e3;
+
+  &__item {
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .prices__item {
+    margin: 0;
+  }
+}

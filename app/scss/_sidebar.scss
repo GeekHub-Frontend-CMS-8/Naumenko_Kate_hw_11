@@ -1,0 +1,77 @@
+.sidebar,
+.sidebar__magnifier {
+  max-width: 300px;
+  width: 100%;
+}
+
+.sidebar {
+  color: #3e3d3d;
+  font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+
+  &__magnifier {
+    position: relative;
+    padding: 15px 0 12px 15px;
+    background-color: transparent;
+    border: 2px solid #a8a8a8;
+    box-sizing: border-box;
+    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+
+    &::after {
+      position: absolute;
+      content: url("../img/magnifier.png");
+    }
+  }
+
+  &__title { font: 16px "Montserrat-Bold", "Helvetica", sans-serif; }
+
+  &__post {
+    padding: 35px 0;
+    display: flex;
+    border-bottom: 1px solid #b7b7b7;
+
+    &:nth-last-child(1) {
+      border-bottom: 0;
+    }
+  }
+
+  &__text-container {
+    padding-left: 15px;
+  }
+
+  &__post-title {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    letter-spacing: 1.4px;
+    line-height: 1.7;
+  }
+
+  &__list {
+    padding-bottom: 25px;
+  }
+
+  &__list-item {
+    padding: 20px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #b7b7b7;
+  }
+
+  &__photos {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 1145px) {
+  .sidebar {
+    display: none;
+  }
+}

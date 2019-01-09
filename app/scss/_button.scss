@@ -1,23 +1,40 @@
 .button {
-  padding: 15px 35px;
+  padding: 10px 30px;
   background-color: transparent;
   border: 2px solid;
+  font-family: "Montserrat-SemiBold", "Helvetica", sans-serif;
+  letter-spacing: 1.5px;
   
-  &__lite {
+  &__light {
     border-color: #f2f2f2;
-    color: #ffffff;
-    font: 15px "Montserrat-SemiBold", "Helvetica", sans-serif;
-    letter-spacing: 1.5px;
+    color: #fff;
+
+    &--hovered:hover {
+      border-color: #3e3d3d;
+      background-color: #fff;
+      color: #3e3d3d;
+      cursor: pointer;
+    }
   }
 
   &__arrow::after {
     position: absolute;
     content: url("../img/Arrow.png");
     bottom: -45px;
-    left: 46%;
+    left: 0;
+    right: 0;
   }
 
   &__dark {
     border-color: #3e3d3d;
+    color: #3e3d3d;
+
+    &--hovered:hover {
+      background-color: #3e3d3d;
+      color: #cecece;
+      cursor: pointer;
+    }
   }
+
+
 }

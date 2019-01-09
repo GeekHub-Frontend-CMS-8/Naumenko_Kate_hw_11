@@ -1,0 +1,18 @@
+.light-title {
+  position: relative;
+  color: #fff;
+
+  &::after {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    content: url("../img/light-wave.png");
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .light-title::after {
+    content: url("../img/light-long-wave.png");
+  }
+}

@@ -8,13 +8,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/shuffle.min.js"></script>
 	</head>
 	<body>
-  	<header class="header">
+  	<header class="header global-properties">
 			<div class="row header__row">
 				<div class="company-logo">
-					<img src="./img/atlantida_logo.svg" class="header-logo">
-					ATLANTIDA
+					<img src="./img/atlantida_logo.svg">
+					<p class="company-logo__name">ATLANTIDA</p>
 				</div>
 				<nav class="navigation" aria-label="Menu">
 					<label for="navigation__toggle-menu" aria-label="Menu">
@@ -22,54 +25,70 @@
 					</label>
 					<input id="navigation__toggle-menu" type="checkbox">
 					<ul class="navigation__main-menu navigation__home-main-menu">
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Home</a>
+						<li class="navigation__menu-item">
+							<a href="#home" class="link navigation__link">Home</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">About</a>
+						<li class="navigation__menu-item">
+							<a href="#about" class="link navigation__link">About</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Services</a>
+						<li class="navigation__menu-item">
+							<a href="#services" class="link navigation__link">Services</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">History</a>
+						<li class="navigation__menu-item">
+							<a href="#history" class="link navigation__link">History</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Team</a>
+						<li class="navigation__menu-item">
+							<a href="#team" class="link navigation__link">Team</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Portfolio</a>
+						<li class="navigation__menu-item">
+							<a href="#portfolio" class="link navigation__link">Portfolio</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Prices</a>
+						<li class="navigation__menu-item">
+							<a href="#prices" class="link navigation__link">Prices</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Blog</a>
+						<li class="navigation__menu-item">
+							<a href="#blog" class="link navigation__link">Blog</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link">Contact</a>
+						<li class="navigation__menu-item">
+							<a href="blog.html" class="link navigation__link">Blog-2</a>
 						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link navigation__social-icon">
+						<li class="navigation__menu-item">
+							<a href="#contact" class="link navigation__link">Contact</a>
+						</li>
+						<li class="navigation__menu-item">
+							<a href="javascript:void(0)" class="link navigation__link navigation__social-icon">
 								<i class="fab fa-facebook-square"></i>
 							</a>
-						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link navigation__social-icon">
+							<a href="javascript:void(0)" class="link navigation__link navigation__social-icon">
 								<i class="fab fa-twitter"></i>
 							</a>
-						</li>
-						<li class="navigation__menu-item navigation__menu-item--hovered">
-							<a href="#" class="link navigation__link navigation__social-icon">
+							<a href="javascript:void(0)" class="link navigation__link navigation__social-icon">
 								<i class="fab fa-behance"></i>
 							</a>
 						</li>
 					</ul>
 				</nav>
+				<ul class="header__social-icons">
+					<li class="social-icon  header__social-icon">
+						<a href="javascript:void(0)" class="link social-icon__link">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</li>
+					<li class="social-icon  header__social-icon">
+						<a href="javascript:void(0)" class="link social-icon__link">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="social-icon  header__social-icon">
+						<a href="javascript:void(0)" class="link social-icon__link">
+							<i class="fab fa-behance"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</header>
   	<main>
-    	<section class="home">
+    	<section class="home global-properties" id="home">
 				<div class="row">
 					<div class="carousel">
 						<span id="target-item-1"></span>
@@ -98,8 +117,10 @@
 									<i class="fas fa-angle-right"></i>
 								</div>
 							</a>
-							<div class="button-container">
-								<button type="button" class="button button__lite button__arrow">Get Started</button>
+							<div class="button-container carousel__button-container">
+								<button type="button" class="button button__light button__light--hovered button__arrow carousel__button">
+									Get Started
+								</button>
 							</div>
 						</div>
 						<div class="carousel__item carousel__item-2">
@@ -125,8 +146,10 @@
 									<i class="fas fa-angle-right"></i>
 								</div>
 							</a>
-							<div class="button-container">
-								<button type="button" class="button button__lite button__arrow">Get Started</button>
+							<div class="button-container  carousel__button-container">
+								<button type="button" class="button button__light button__light--hovered button__arrow carousel__button">
+									Get Started
+								</button>
 							</div>
 						</div>
 						<div class="carousel__item carousel__item-3">
@@ -152,13 +175,776 @@
 									<i class="fas fa-angle-right"></i>
 								</div>
 							</a>
-							<div class="button-container">
-								<button type="button" class="button button__lite button__arrow">Get Started</button>
+							<div class="button-container carousel__button-container">
+								<button type="button" class="button button__light button__light--hovered button__arrow carousel__button">
+									Get Started
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="about global-properties" id="about">
+				<div class="row">
+					<div class="about-us">
+						<div class="about-us__container">
+							<div class="about-us__img"></div>
+							<div class="title">
+								ABOUT US
+							</div>
+							<div class="text about-us__text">
+								Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat.
+								Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque.
+								Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in
+								aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate
+								id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis
+								pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor
+								viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id
+								tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.
+							</div>
+							<div class="button-container">
+								<div class="button button__dark button__dark--hovered about-us__button">
+									Contact Us
+								</div>
+								<div class="button button__dark button__dark--hovered about-us__button about-us__button-portfolio">
+									Portfolio
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="skill-container">
+						<div class="skill">
+							<div class="skill__img">
+								<img src="./img/medal.png" alt="Medal">
+							</div>
+							<div>
+								<h3 class="small-title skill__title">AWARDS
+									WINNER</h3>
+								<p class="small-title skill__title skill__large-title">54</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill__img">
+								<img src="./img/check.png" alt="Checked check">
+							</div>
+							<div>
+								<h3 class="small-title skill__title">JOBS
+									DONE</h3>
+								<p class="small-title skill__title skill__large-title">1054</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill__img">
+								<img src="./img/businessman.png" alt="Businessman">
+							</div>
+							<div>
+								<h3 class="small-title skill__title">HAPPY
+									CLIENTS</h3>
+								<p class="small-title skill__title skill__large-title">120</p>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill__img">
+								<img src="./img/briefcase.png" alt="Briefcase">
+							</div>
+							<div>
+								<h3 class="small-title skill__title">reviews
+									recieved</h3>
+								<p class="small-title skill__title skill__large-title">54</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services global-properties" id="services">
+				<div class="row">
+					<div class="title services__title">
+						SERVICES
+					</div>
+					<div class="text services__text">
+						Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat.
+						Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque.
+					</div>
+					<div class="service-container">
+						<div class="service services__item">
+							<div class="service__img">
+								<i class="far fa-lightbulb service__font-awesome"></i>
+							</div>
+							<div class="small-title service__title">GRAPHIC
+								DESIGN
+							</div>
+							<div class="text services__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum
+								non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam
+								congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</div>
+						</div>
+						<div class="service services__item">
+							<div class="service__img">
+								<i class="fas fa-tv  service__font-awesome"></i>
+							</div>
+							<div class="small-title service__title">WEBSITE
+								DESIGN
+							</div>
+							<div class="text services__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum
+								non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam
+								congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</div>
+						</div>
+						<div class="service services__item">
+							<div class="service__img">
+								<i class="fas fa-chart-line  service__font-awesome"></i>
+							</div>
+							<div class="small-title service__title">SEO &
+								ANALITYCS
+							</div>
+							<div class="text services__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum
+								non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam
+								congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</div>
+						</div>
+						<div class="service services__item">
+							<div class="service__img">
+								<i class="fab fa-wordpress-simple  service__font-awesome"></i>
+							</div>
+							<div class="service__title small-title">WORDPRESS
+								PROGRAMING
+							</div>
+							<div class="text services__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum
+								non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam
+								congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-history global-properties" id="history">
+				<div class="row">
+					<div class="title">
+						HISTORY
+					</div>
+					<div class="text">
+						In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non arcu.
+						In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet.
+					</div>
+					<div class="timeline">
+						<div class="small-title timeline__ellipse">2015</div>
+						<div class="timeline__row">
+							<div class="timeline__container timeline__left">
+								<div class="timeline__content timeline__content-left timeline__content--hovered">
+									<h3 class="small-title">
+										Donec id lobortis tellus. Maecenas vel dignissim
+									</h3>
+									<p class="timeline__date">
+										07 October 2015
+									</p>
+									<p class="text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+										ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+										aliquam	congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+										himenaeos.
+									</p>
+								</div>
+							</div>
+							<div class="timeline__container timeline__right">
+								<div class="timeline__content timeline__content-right timeline__content--hovered">
+									<h3 class="small-title">
+										Nam tincidunt, lacus sit amet ultrices
+									</h3>
+									<p class="timeline__date">
+										05 June 2015
+									</p>
+									<p class="text">
+										In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non
+										arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet.
+										Donec quis faucibus lorem.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="timeline__row">
+							<div class="timeline__container timeline__left">
+								<div class="timeline__content timeline__content-left timeline__content--hovered">
+									<h3 class="small-title">
+										Donec quis faucibus lorem
+									</h3>
+									<p class="timeline__date">
+										07 May 2015
+									</p>
+									<p class="text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+										ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+										aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+										himenaeos.
+									</p>
+								</div>
+							</div>
+							<div class="timeline__container timeline__right">
+								<div class="timeline__content timeline__content-right timeline__content--hovered">
+									<h3 class="small-title">
+										Nunc efficitur laoreet turpis sed auctor.
+									</h3>
+									<p class="timeline__date">
+										02 April 2015
+									</p>
+									<p class="text timeline__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed
+										ipsum pulvinar, consequat	ipsum non, sodales augue. Donec dapibus
+										ipsum rutrum congue egestas. Curabitur fringilla tortor non	aliquam
+										congue. Class aptent taciti sociosqu ad litora torquent per conubia
+										nostra, per inceptos himenaeos.
+										
+										Praesent id augue in risus molestie euismod molestie id augue.
+										Suspendisse a libero porttitor,	lobortis eros ac, varius velit. Praesent
+										sed eros at elit suscipit laoreet vitae condimentum risus.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="small-title timeline__ellipse">2014</div>
+						<div class="timeline__row">
+							<div class="timeline__container timeline__left">
+								<div class="timeline__content timeline__content-left timeline__content--hovered">
+									<h3 class="small-title">
+										Donec id lobortis tellus. Maecenas vel dignissim
+									</h3>
+									<p class="timeline__date">
+										07 October 2014
+									</p>
+									<p class="text">
+										In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non
+										arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet.
+										Donec quis faucibus lorem.
+									</p>
+								</div>
+							</div>
+							<div class="timeline__container timeline__right">
+								<div class="timeline__content timeline__content-right timeline__content--hovered">
+									<h3 class="small-title">
+										Nam tincidunt, lacus sit amet ultrices
+									</h3>
+									<p class="timeline__date">
+										05 June 2014
+									</p>
+									<p class="text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+										ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+										aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+										himenaeos.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="timeline__ellipse timeline__small-ellipse">
+							<i class="far fa-lightbulb"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-team global-properties" id="team">
+				<div class="row">
+					<div class="title our-team__title">
+						OUR TEAM
+					</div>
+					<div class="text">
+						Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna
+						eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus
+						bibendum dolor, sit amet pretium odio magna eget risus.
+					</div>
+					<div class="we-are">
+						<div class="container we-are__container">
+							<div class="container__hover">
+								<div class="container__tiny">
+									<h3 class="small-title  container__user-name">Patrick Willowby</h3>
+									<p class="container__post">CEO</p>
+									<div class="social-icons container__social-icons">
+										<div class="social-icon">
+											<i class="fab fa-facebook-square"></i>
+										</div>
+										<div class="social-icon">
+											<i class="fab fa-twitter"></i>
+										</div>
+										<div class="social-icon">
+											<i class="fab fa-behance"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img src="./img/team-item1.png" alt="Patrick Willowby">
+						</div>
+						<div class="container we-are__container">
+							<div class="container__hover">
+								<div class="container__tiny">
+									<h3 class="small-title  container__user-name">Amanda Red</h3>
+									<p class="container__post">Lead Developer</p>
+									<div class="social-icons container__social-icons">
+										<div class="social-icon">
+											<i class="fab fa-facebook-square"></i>
+										</div>
+										<div class="social-icon">
+											<i class="fab fa-twitter"></i>
+										</div>
+										<div class="social-icon">
+											<i class="fab fa-behance"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img src="./img/team-item2.png" alt="Amanda Red">
+						</div>
+						<div class="container we-are__container">
+							<div class="container__hover">
+								<div class="container__tiny">
+									<h3 class="small-title container__user-name">Julia Smith</h3>
+									<p class="container__post">Designer</p>
+									<div class="social-icons container__social-icons">
+										<div class="social-icon">
+											<i class="fab fa-facebook-square"></i>
+										</div>
+										<div class="social-icon">
+											<i class="fab fa-twitter"></i>
+										</div>
+										<div class="social-icon">
+											<i class="fab fa-behance"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img src="./img/team-item3.png" alt="Julia Smith">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio global-properties" id="portfolio">
+				<div class="row portfolio__row">
+					<div class="title">
+						PORTFOLIO
+					</div>
+					<div class="text">
+						Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna
+						eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus
+						bibendum dolor, sit amet pretium odio magna eget risus.
+					</div>
+					<div class="button-container portfolio__button-container">
+						<button type="button" data-filter="" class="button button__dark button__dark--hovered portfolio__btn portfolio__all-btn">
+							ALL
+						</button>
+						<button type="button" data-filter="website" class="button button__dark button__dark--hovered portfolio__btn portfolio__website-btn">
+							WEBSITE
+						</button>
+						<button type="button" data-filter="brochures" class="button button__dark button__dark--hovered portfolio__btn portfolio__brochures-btn">
+							BROCHURES
+						</button>
+						<button type="button" data-filter="logos" class="button button__dark button__dark--hovered portfolio__btn portfolio__logos-btn">
+							LOGOS
+						</button>
+					</div>
+					<div class="works">
+							<div class="works__item" data-groups='["website"]'>
+								<img src="./img/work1.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["website"]'>
+								<img src="./img/work2.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["brochures"]'>
+								<img src="./img/work3.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["logos"]'>
+								<img src="./img/work4.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["logos"]'>
+								<img src="./img/work5.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["brochures"]'>
+								<img src="./img/work6.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["brochures"]'>
+								<img src="./img/work7.png" alt="Work">
+							</div>
+							<div class="works__item" data-groups='["website"]'>
+								<img src="./img/work8.png" alt="Work">
+							</div>
+						<div class="my-sizer-element my-sizer-element__sm my-sizer-element__md my-sizer-element__lg"></div>
+					</div>
+				</div>
+			</section>
+			<section class="prices global-properties" id="prices">
+				<div class="row">
+					<div class="title">
+						PRICES
+					</div>
+					<div class="text">
+						Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna
+						eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus
+						bibendum dolor, sit amet pretium odio magna eget risus.
+					</div>
+					<div class="price-container">
+						<div class="price prices__item">
+							<h3 class="small-title price__small-title">
+								BASIC
+							</h3>
+							<div class="price__ellipse-container">
+								<div class="price__ellipse">
+									<i class="fas fa-lock"></i>
+								</div>
+							</div>
+							<div class="price__cost">
+								<span class="price__cost-sign">$</span>10
+							</div>
+							<div class="price__text">
+								Full Access
+								Unlimited Edition
+								Full Backup
+								Free Tea and Free Mockup
+								Several Prices
+							</div>
+							<button type="button" class="button button__dark button__dark--hovered">
+								Sign Up
+							</button>
+						</div>
+						<div class="price prices__item">
+							<h3 class="small-title price__small-title">
+								ADVANCED
+							</h3>
+							<div class="price__ellipse-container">
+								<div class="price__ellipse">
+									<i class="fas fa-bullhorn"></i>
+								</div>
+							</div>
+							<div class="price__cost">
+								<span class="price__cost-sign">$</span>20
+							</div>
+							<div class="price__text">
+								Full Access
+								Unlimited Edition
+								Full Backup
+								Free Tea and Free Mockup
+								Several Prices
+							</div>
+							<button type="button" class="button button__dark button__dark--hovered">
+								Sign Up
+							</button>
+						</div>
+						<div class="price prices__item">
+							<h3 class="small-title price__small-title">
+								PRO
+							</h3>
+							<div class="price__ellipse-container">
+								<div class="price__ellipse">
+									<i class="far fa-check-circle"></i>
+								</div>
+							</div>
+							<div class="price__cost">
+								<span class="price__cost-sign">$</span>30
+							</div>
+							<div class="price__text">
+								Full Access
+								Unlimited Edition
+								Full Backup
+								Free Tea and Free Mockup
+								Several Prices
+							</div>
+							<button type="button" class="button button__dark button__dark--hovered">
+								Sign Up
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="intro global-properties">
+				<div class="row intro__row">
+					<div class="intro__left">
+						<div class="intro__img">
+							<img src="./img/wind-rose.png" alt="Wind Rose">
+						</div>
+						<div class="intro__text">
+							<h3 class="intro__title">
+								Looking for a quality and affordable for your next project ?
+							</h3>
+							<p class="intro__paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus
+								sed in dolor. Etiam iaculis, nibh a lobortis egestas, est urna sodales
+							</p>
+						</div>
+					</div>
+					<div class="intro__right">
+						<button type="button" class="button button__light intro__btn intro__btn--hovered">
+							Purchase
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="blog global-properties" id="blog">
+			 <div class="row blog__row">
+				 <div class="title">
+					 BLOG
+				 </div>
+				 <div class="text">
+					 Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna
+					 eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus
+					 bibendum dolor, sit amet pretium odio magna eget risus.
+				 </div>
+				 <div class="blog__wrapper">
+					 <a href="sidebar-blog.html" class="post post__darker link">
+						 <div class="post__img">
+							 <img src="./img/blog1.png" alt="Article image">
+						 </div>
+						 <div class="post__text">
+							 <p class="date">
+								 14 Aug 2015 / By Admin
+							 </p>
+							 <h3 class="small-title post__topic">
+								 <span><i class="fas fa-caret-right"></i></span> Donec id lobortis tellus Maecenas.
+							 </h3>
+							 <p class="text post__paragraph">
+								 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+								 ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+								 aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+								 himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora
+								 torquent per conubia nostra, per inceptos himenaeos.
+							 </p>
+						 </div>
+					 </a>
+					 <a href="sidebar-blog.html" class="post post__lighter link">
+						 <div class="post__img">
+							 <img src="./img/blog2.png" alt="Article image">
+						 </div>
+						 <div class="post__text">
+							 <p class="date">
+								 14 Aug 2015 / By Admin
+							 </p>
+							 <h3 class="small-title post__topic">
+								 <span><i class="fas fa-caret-right"></i></span> Donec id lobortis tellus Maecenas.
+							 </h3>
+							 <p class="text post__paragraph">
+								 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+								 ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+								 aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+								 himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora
+								 torquent per conubia nostra, per inceptos himenaeos.
+							 </p>
+						 </div>
+					 </a>
+					 <a href="sidebar-blog.html" class="post post__lighter link">
+						 <div class="post__text">
+							 <p class="date">
+								 14 Aug 2015 / By Admin
+							 </p>
+							 <h3 class="small-title post__topic">
+								 <span><i class="fas fa-caret-right"></i></span> Donec id lobortis tellus Maecenas.
+							 </h3>
+							 <p class="text post__paragraph">
+								 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+								 ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+								 aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+								 himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora
+								 torquent per conubia nostra, per inceptos himenaeos.
+							 </p>
+						 </div>
+						 <div class="post__img">
+							 <img src="./img/blog3.png" alt="Article image">
+						 </div>
+					 </a>
+					 <a href="sidebar-blog.html" class="post post__darker link">
+						 <div class="post__text">
+							 <p class="date">
+								 14 Aug 2015 / By Admin
+							 </p>
+							 <h3 class="small-title post__topic">
+								 <span><i class="fas fa-caret-right"></i></span> Donec id lobortis tellus Maecenas.
+							 </h3>
+							 <p class="text post__paragraph">
+								 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+								 ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non
+								 aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+								 himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora
+								 torquent per conubia nostra, per inceptos himenaeos.
+							 </p>
+						 </div>
+						 <div class="post__img">
+							 <img src="./img/blog4.png" alt="Article image">
+						 </div>
+					 </a>
+				 </div>
+			 </div>
+			</section>
+			<section class="clients global-properties" id="clients">
+				<div class="row clients__row">
+					<div class="title">
+						CLIENTS
+					</div>
+					<div class="text">
+						Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna
+						eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus
+						bibendum dolor, sit amet pretium odio magna eget risus.
+					</div>
+					<ul class="clients-list">
+						<li>
+							<img src="./img/client1.png">
+						</li>
+						<li>
+							<img src="./img/client2.png">
+						</li>
+						<li>
+							<img src="./img/client3.png">
+						</li>
+						<li>
+							<img src="./img/client4.png">
+						</li>
+						<li>
+							<img src="./img/client5.png">
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="testimonials global-properties">
+				<div class="row">
+					<div class="small-carousel-wrapper">
+						<div class="small-carousel">
+							<ul class="small-carousel__slides">
+								<input type="radio" name="radio-buttons" id="slide-1" checked>
+								<li class="small-carousel__slide-container">
+									<div class="small-carousel__slide">
+										<div class="small-carousel__img">
+											<img src="./img/client-testimonial.png">
+										</div>
+										<div class="small-carousel__text">
+											<blockquote class="small-carousel__testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor.
+												Etiam iaculis, nibh a lobortis egestas, est urna sodales</blockquote>
+											<p class="small-title small-carousel__name">
+												ALEXANDR PODVALNY
+											</p>
+											<p class="small-carousel__company">
+												Free-PSD-Template.com Company
+											</p>
+										</div>
+									</div>
+								</li>
+								<input type="radio" name="radio-buttons" id="slide-2">
+								<li class="small-carousel__slide-container">
+									<div class="small-carousel__slide">
+										<div class="small-carousel__img">
+											<img src="./img/client-testimonial.png">
+										</div>
+										<div class="small-carousel__text">
+											<blockquote class="small-carousel__testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor.
+												Etiam iaculis, nibh a lobortis egestas, est urna sodales</blockquote>
+											<p class="small-title small-carousel__name">
+												EVA STUART
+											</p>
+											<p class="small-carousel__company">
+												Free-PSD-Template.com Company
+											</p>
+										</div>
+									</div>
+								</li>
+								<input type="radio" name="radio-buttons" id="slide-3">
+								<li class="small-carousel__slide-container">
+									<div class="small-carousel__slide">
+										<div class="small-carousel__img">
+											<img src="./img/client-testimonial.png">
+										</div>
+										<div class="small-carousel__text">
+											<blockquote class="small-carousel__testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor.
+												Etiam iaculis, nibh a lobortis egestas, est urna sodales</blockquote>
+											<p class="small-title small-carousel__name">
+												AVRORA DOWN
+											</p>
+											<p class="small-carousel__company">
+												Free-PSD-Template.com Company
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="small-carousel__dots">
+									<label for="slide-1" class="small-carousel__dot" id="slide-dot-1"></label>
+									<label for="slide-2" class="small-carousel__dot" id="slide-dot-2"></label>
+									<label for="slide-3" class="small-carousel__dot" id="slide-dot-3"></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="map-container">
+				<iframe class="map-container__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27854.64956310995!2d-73.97573953483156!3d40.77255210017251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b81f84b7%3A0x3a936ebc34369d68!2zMTU1NiBCcm9hZHdheSAjNDE2LCBOZXcgWW9yaywgTlkgMTAwMzYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e1!3m2!1suk!2sua!4v1546878075252" frameborder="0" allowfullscreen></iframe>
+			</section>
+			<section class="contact global-properties" id="contact">
+				<div class="row">
+					<div class="company-logo">
+						<img src="./img/light-logo.svg">
+						<p class="company-logo__name contact__logo-name">ATLANTIDA</p>
+					</div>
+					<div class="contact__container">
+						<div class="contacts">
+							<p class="text contacts__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum
+								non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam
+								congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</p>
+							<h3 class="small-title contacts__small-title">
+								ATLANTIDA STUDIO
+							</h3>
+							<p class="text contacts__address">
+								Steven Bernson, Attorney at Law
+								1556 Broadway, suite 416
+								New York, NY, 10120, USA
+							</p>
+							<p class="small-title contacts__small-title">
+								E-mail: elegantflyers@gmail.com
+								+84 956 654 972
+							</p>
+							<div class="social-icons">
+								<div class="social-icon contacts__social-icon">
+									<i class="fab fa-facebook-square"></i>
+								</div>
+								<div class="social-icon contacts__social-icon">
+									<i class="fab fa-twitter"></i>
+								</div>
+								<div class="social-icon contacts__social-icon">
+									<i class="fab fa-behance"></i>
+								</div>
+							</div>
+						</div>
+						<form action="" method="post" class="form">
+							<ul class="list-input">
+								<li class="list-input__item">
+									<label hidden="" for="name">Name</label>
+									<input type="text" id="name" name="name" placeholder="Name *" class="list-input__field list-input__field--focused">
+								</li>
+								<li class="list-input__item">
+									<label hidden="" for="email">Email</label>
+									<input type="email" id="email" name="email" placeholder="Email *" class="list-input__field list-input__field--focused">
+								</li>
+								<li class="list-input__item">
+									<label hidden="" for="telephone">Telephone</label>
+									<input type="tel" id="telephone" name="telephone" placeholder="Telephone *" class="list-input__field list-input__field--focused">
+								</li>
+								<li class="list-input__item">
+									<label hidden="" for="website">Website</label>
+									<input type="url" id="website" name="website" placeholder="Website" class="list-input__field list-input__field--focused">
+								</li>
+								<li class="list-input__item">
+									<label hidden="" for="message">Message</label>
+									<textarea rows="5" id="message" placeholder="Message" class="list-input__message list-input__message--focused"></textarea>
+								</li>
+								<li class="list-input__button list-input__item">
+									<button type="submit" class="list-input__submit list-input__submit--hovered">Submit</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="footer global-properties">
+			<div class="row">
+				<p class="footer__copyright">
+					Copyright © 2015 Atlantida Theme
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>

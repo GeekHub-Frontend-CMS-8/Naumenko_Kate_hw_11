@@ -1,9 +1,5 @@
 .header {
-  //position: absolute;
   width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
   background-color: #ffffff;
 
   &__row {
@@ -13,5 +9,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__social-icons {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 948px) {
+  .header {
+    &__social-icons,
+    &__social-icon {
+      display: flex;
+    }
+    &__social-icon {
+      align-items: center;
+      justify-content: center;
+      border-right-color: #a4a4a4;
+    }
   }
 }

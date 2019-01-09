@@ -1,0 +1,15 @@
+.clients-list {
+  max-width: 1030px;
+  width: 100%;
+  padding: 75px 0 125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .clients-list {
+    justify-content: space-between;
+  }
+}

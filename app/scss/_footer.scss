@@ -1,44 +1,17 @@
 .footer {
-  padding: 25px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $secondary-contact-page-color;
+  background-color: #292929;
+  text-align: left;
 
-
-  &__social-icons {
-    max-width: 360px;
-    margin: auto;
-  }
-
-  &__social-icon {
-    width: 60px;
-    height: 60px;
-    background-color: #82c8bd;
-    color: $primary-color;
-    font-size: $fourth-seniority-font-size;
-    cursor: pointer;
-  }
-
-  &__facebook-icon--hovered:hover {
-    background-color: #4f689e;
-  }
-
-  &__twitter-icon--hovered:hover {
-    background-color: $primary-home-page-color;
-  }
-
-  &__google-icon--hovered:hover {
-    background-color: $secondary-service-page-color;
-  }
-
-  &__linkedin-icon--hovered:hover {
-    background-color: #3e61af;
+  &__copyright {
+    padding: 25px 0;
+    border-top: 1px solid #3e3e3e;
+    color: #949494;
+    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .footer {
-    padding: 45px 0;
+  .footer__copyright {
+    padding: 40px 0;
   }
 }

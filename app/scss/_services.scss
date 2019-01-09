@@ -1,0 +1,33 @@
+.services {
+  padding-bottom: 85px;
+  background: url("../img/services-bg.png") no-repeat center/cover;
+
+  &__title {
+    position: relative;
+    color: #fff;
+
+    &::after {
+      position: absolute;
+      bottom: 35px;
+      left: 0;
+      right: 0;
+      content: url("../img/light-wave.png");
+    }
+  }
+  
+  &__text {
+    color: #cfcfcf;
+  }
+
+  &__item {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  .services {
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+}

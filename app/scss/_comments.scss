@@ -1,0 +1,14 @@
+.comments {
+  padding-bottom: 70px;
+
+  &__reply {
+    margin-left: 50px;
+    border-bottom: 1px solid #b7b7b7;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comments__reply {
+    margin-left: 100px;
+  }
+}

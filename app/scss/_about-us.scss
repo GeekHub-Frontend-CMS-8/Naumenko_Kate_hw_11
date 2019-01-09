@@ -1,0 +1,42 @@
+.about-us {
+
+  &__container {
+    background-color: #fff;
+  }
+  
+  &__img {
+    background: url("../img/about-us-img.png") no-repeat center/cover;
+    width: 100%;
+    height: 325px;
+  }
+
+  &__text {
+    padding: 0 10px 25px 10px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 140px;
+    padding: 10px;
+    margin: 0 1px 50px;
+    box-sizing: border-box;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us {
+    &__text {
+      padding: 0 70px 45px 70px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-us {
+    &__text {
+      text-align: left;
+    }
+  }
+}

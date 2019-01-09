@@ -1,0 +1,115 @@
+.small-carousel {
+  background-color: transparent;
+
+  &__slides {
+    display: block;
+    position: relative;
+    min-height: 535px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    user-select: none;
+  }
+
+  &__slides input { display: none; }
+
+  &__slide-container { display: block; }
+
+  &__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+  }
+
+  &__img { width: auto; }
+
+  &__text,
+  &__name { color: #efefef;}
+
+  &__testimonial {
+    padding: 20px 0;
+    font: 20px "CrimsonText-Italic", "Helvetica", sans-serif;
+    white-space: pre-line;
+
+    &:before {
+      position: relative;
+      top: 35px;
+      left: -15px;
+      content: "“";
+      color: #efefef;
+      font-size: 93px;
+      line-height: 0;
+    }
+
+    &:after {
+      position: relative;
+      top: 5px;
+      left: 5px;
+      content: "„";
+      color: #efefef;
+      font-size: 93px;
+      line-height: 0;
+    }
+  }
+  //
+  //&__quote {
+  //  font-size: 93px;
+  //  line-height: 0;
+  //  white-space: pre;
+  //}
+  //
+  //&__left-quote {
+  //  transform: rotateY(180deg);
+  //}
+
+  &__company {
+    padding-top: 15px;
+    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+  }
+
+  &__dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+    z-index: 999;
+    text-align: center;
+  }
+
+  &__dots &__dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 1px;
+  }
+}
+
+input:checked + .small-carousel__slide-container .small-carousel__slide {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input#slide-1:checked ~ .small-carousel__dots label#slide-dot-1,
+input#slide-2:checked ~ .small-carousel__dots label#slide-dot-2,
+input#slide-3:checked ~ .small-carousel__dots label#slide-dot-3 {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px){
+  .small-carousel__testimonial {
+    padding-top: 50px;
+    border-bottom: 50px;
+  }
+
+}

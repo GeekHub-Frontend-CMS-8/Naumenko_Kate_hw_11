@@ -1,0 +1,53 @@
+.intro {
+  background-color: #2d2d2f;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__left {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  &__right {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 620px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    color: #d8d8d8;
+    font: 16px "Montserrat-Bold", "Helvetica", sans-serif;
+  }
+
+  &__paragraph {
+    color: #888888;
+    font: 16px/1.25 "CrimsonText-Italic", "Helvetica", sans-serif;
+  }
+
+
+  &__btn {
+    border-color: #e3e3e3;
+    color: #e3e3e3;
+
+    &--hovered:hover {
+      border-color: #2d2d2f;
+      background-color: #e3e3e3;
+      color: #2d2d2f;
+    }
+  }
+}

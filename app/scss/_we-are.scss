@@ -1,0 +1,31 @@
+.we-are {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  padding-top: 55px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__container {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .we-are {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .we-are {
+    padding-bottom: 70px;
+    justify-content: space-between;
+
+    &__container {
+      margin-bottom: 0;
+    }
+  }
+}

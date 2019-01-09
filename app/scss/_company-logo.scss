@@ -1,12 +1,24 @@
 .company-logo {
-  //padding-bottom: 15px;
   color: #757575;;
   font: 18px "Montserrat-SemiBold", "Helvetica", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__name {
+    margin-left: 10px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .company-logo {
     //padding-top: 25px;/
     padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1055px) {
+  .company-logo {
+    justify-content: left;
   }
 }

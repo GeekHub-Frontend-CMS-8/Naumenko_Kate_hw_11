@@ -1,0 +1,40 @@
+.service {
+  position: relative;
+  max-width: 270px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 35px;
+  border: 2px solid #898989;
+  border-top: 0;
+
+  &__img {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -2px;
+    width: calc(100% + 4px);
+    color: #d8d8d8;
+    font-size: 24px;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 2px solid #898989;
+      margin: auto;
+    }
+  }
+
+  &__font-awesome {
+    margin: 0 20px;
+  }
+
+  &__title {
+    padding-bottom: 25px;
+    color: #d8d8d8;
+  }
+}

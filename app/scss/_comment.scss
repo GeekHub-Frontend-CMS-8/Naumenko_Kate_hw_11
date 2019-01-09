@@ -1,0 +1,43 @@
+.comment {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__user,
+  &__text { margin-left: 30px; }
+
+  &__text-with-border { border-bottom: 1px solid #b7b7b7; }
+
+  &__date {
+    padding: 5px 0 30px;
+    border-bottom: 0;
+    color: #3e3d3d;
+    font-size: 14px;
+  }
+
+  &__paragraph { padding-right: 30px; }
+
+  &__reply-container {
+    text-align: right;
+  }
+
+  &__reply {
+    width: 60px;
+    margin: 50px 0 10px;
+    background-color: #e3e3e3;
+    color: #3e3d3d;
+    cursor: pointer;
+    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    border: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comment {
+    flex-wrap: nowrap;
+
+    &__user { margin-left: 0; }
+
+    &__paragraph { padding-right: 65px; }
+  }
+}

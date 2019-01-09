@@ -1,0 +1,69 @@
+.list-input {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    max-width: 375px;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  &__field,
+  &__message {
+    width: 100%;
+    padding-left: 25px;
+    background-color: transparent;
+    border: 2px solid #464646;
+    box-sizing: border-box;
+
+    &--focused:focus {
+      background-color: #fff;
+    }
+
+    &::placeholder {
+      color: #949494;
+      font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    }
+  }
+
+  &__field {
+    height: 55px;
+  }
+
+  &__message {
+    resize: none;
+    padding-top: 20px;
+  }
+
+  &__submit {
+    padding: 12px 40px;
+    background-color: #464646;
+    border: 0;
+    color: #e3e3e3;
+    font: 13px "Montserrat-SemiBold", "Helvetica", sans-serif;
+  }
+}
+
+
+
+@media only screen and (min-width: 805px) {
+  .list-input {
+    &__item:nth-last-child(1),
+    &__item:nth-last-child(2) {
+      max-width: 775px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1155px) {
+  .list-input {
+    justify-content: space-between;
+  }
+
+  .list-input__item:nth-last-child(1) {
+    text-align: left;
+  }
+}
