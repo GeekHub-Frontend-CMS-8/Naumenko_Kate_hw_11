@@ -58,11 +58,13 @@
   }
 }
 
-@media only screen and (min-width: 1155px) {
+@media only screen and (min-width: 1024px) {
   .list-input {
     justify-content: space-between;
   }
+}
 
+@media only screen and (min-width: 1155px) {
   .list-input__item:nth-last-child(1) {
     text-align: left;
   }

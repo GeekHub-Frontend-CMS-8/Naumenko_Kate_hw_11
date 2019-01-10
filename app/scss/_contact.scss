@@ -14,11 +14,9 @@
   }
 }
 
-@media only screen and (min-width: 1155px) {
-  .contact {
-    &__container {
-      justify-content: space-between;
-    }
+@media only screen and (min-width: 1175px) {
+  .contact__container {
+    justify-content: space-between;
   }
 }
 

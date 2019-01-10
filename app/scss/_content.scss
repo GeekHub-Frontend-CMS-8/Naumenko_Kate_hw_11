@@ -1,11 +1,6 @@
+.content:nth-last-child(2) .content__btn { margin-bottom: 70px; }
+
 .content {
-  padding-bottom: 50px;
-
-  &:nth-last-child(2) {
-    padding-bottom: 70px;
-    border-bottom: 1px solid #3e3d3d;
-  }
-
   &__img img {
     max-width: 100%;
   }
@@ -60,11 +55,16 @@
     letter-spacing: 1.6px;
   }
 
+  &__btn {
+    margin-bottom: 50px;
+  }
+
   &__pages {
-    display: flex;
-    justify-content: center;
     padding-bottom: 0;
     padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #3e3d3d;
   }
 
   &__page {
