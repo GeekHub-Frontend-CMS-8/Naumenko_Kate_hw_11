@@ -4,7 +4,7 @@
 
   &__title {
     position: relative;
-    color: #fff;
+    color: $tertiary-color;
 
     &::after {
       position: absolute;
@@ -15,19 +15,11 @@
     }
   }
   
-  &__text {
-    color: #cfcfcf;
-  }
+  &__text { color: #cfcfcf; }
 
-  &__item {
-    margin-bottom: 35px;
-  }
+  &__item {  margin-bottom: 35px; }
 }
 
 @media only screen and (min-width: 1095px) {
-  .services {
-    &__item {
-      margin-bottom: 0;
-    }
-  }
+  .services__item { margin-bottom: 0; }
 }

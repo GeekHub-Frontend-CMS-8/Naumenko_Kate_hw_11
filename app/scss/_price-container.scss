@@ -6,13 +6,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .price-container {
-    padding: 80px 0;
-  }
+  .price-container { padding: 80px 0; }
 }
 
 @media only screen and (min-width: 1150px) {
-  .price-container {
-    justify-content: space-between;
-  }
+  .price-container { justify-content: space-between; }
 }

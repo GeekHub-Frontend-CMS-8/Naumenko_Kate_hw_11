@@ -1,7 +1,7 @@
 .about-us {
 
   &__container {
-    background-color: #fff;
+    background-color: $tertiary-color;
   }
   
   &__img {
@@ -20,23 +20,19 @@
     padding: 10px;
     margin: 0 1px 50px;
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: $tertiary-font-size;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .about-us {
-    &__text {
-      padding: 0 70px 45px 70px;
-    }
+  .about-us__text {
+    padding: 0 70px 45px 70px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .about-us {
-    &__text {
-      text-align: left;
-    }
+  .about-us__text {
+    text-align: left;
   }
 }

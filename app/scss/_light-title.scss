@@ -1,6 +1,6 @@
 .light-title {
   position: relative;
-  color: #fff;
+  color: $tertiary-color;
 
   &::after {
     position: absolute;
@@ -12,7 +12,5 @@
 }
 
 @media only screen and (min-width: 360px) {
-  .light-title::after {
-    content: url("../img/light-long-wave.png");
-  }
+  .light-title::after { content: url("../img/light-long-wave.png"); }
 }

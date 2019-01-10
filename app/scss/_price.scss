@@ -1,7 +1,7 @@
 .price {
   position: relative;
   padding: 45px 70px 60px;
-  background-color: #fff;
+  background-color: $tertiary-color;
   max-width: 370px;
   width: 100%;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
     max-width: 230px;
     margin: 0 auto;
     padding-bottom: 50px;
-    border-bottom: 1px solid #3e3d3d;
+    border-bottom: 1px solid $primary-color;
   }
 
   &__ellipse-container {
@@ -26,33 +26,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    border: 2px solid #3e3d3d;
+    background-color: $tertiary-color;
+    border: 2px solid $primary-color;
     border-radius: 50%;
-    color: #3e3d3d;
+    color: $primary-color;
   }
 
   &__cost {
     padding-top: 55px;
-    color: #3e3d3d;
-    font: 70px "Montserrat-Bold", "Helvetica", sans-serif;
+    color: $primary-color;
+    font: 70px $fifth-seniority-font;
   }
 
   &__cost-sign {
     position: absolute;
     left: 29%;
-    font: 28px "Montserrat-SemiBold", "Helvetica", sans-serif;
+    font: 28px $tertiary-font;
   }
 
   &__text {
     padding-bottom: 50px;
-    font: 16px/1.9 "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: #{$secondary-font-size}/1.9 $primary-font;
     white-space: pre-line;
   }
 }
 
 @media only screen and (min-width: 410px) {
-  .price__cost-sign {
-    left: 33%;
-  }
+  .price__cost-sign { left: 33%; }
 }

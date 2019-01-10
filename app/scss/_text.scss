@@ -1,7 +1,7 @@
 .text {
   max-width: 1030px;
   margin: auto;
-  color: #3e3d3d;
-  font: 14px/1.8 "CrimsonText-Roman", "Helvetica", sans-serif;
+  color: $primary-color;
+  font: #{$primary-font-size}/1.8 $secondary-font;
   letter-spacing: 1.4px;
 }

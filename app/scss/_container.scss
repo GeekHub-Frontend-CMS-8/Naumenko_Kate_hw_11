@@ -6,9 +6,7 @@
   z-index: 10;
   text-align: left;
 
-  &:hover {
-    transition: ease-in-out 1s;
-  }
+  &:hover { transition: ease-in-out 1s; }
 
 
   &:hover &__hover {
@@ -54,7 +52,7 @@
 
   &__post {
     position: relative;
-    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: $primary-font-size $primary-font;
     padding-bottom: 5px;
 
     &::after {
@@ -69,7 +67,5 @@
     }
   }
 
-  &__social-icons {
-    padding-top: 10px;
-  }
+  &__social-icons { padding-top: 10px; }
 }

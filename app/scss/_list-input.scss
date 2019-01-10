@@ -18,19 +18,15 @@
     border: 2px solid #464646;
     box-sizing: border-box;
 
-    &--focused:focus {
-      background-color: #fff;
-    }
+    &--focused:focus { background-color: $secondary-color; }
 
     &::placeholder {
       color: #949494;
-      font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+      font: $primary-font-size $primary-font;
     }
   }
 
-  &__field {
-    height: 55px;
-  }
+  &__field { height: 55px; }
 
   &__message {
     resize: none;
@@ -41,8 +37,8 @@
     padding: 12px 40px;
     background-color: #464646;
     border: 0;
-    color: #e3e3e3;
-    font: 13px "Montserrat-SemiBold", "Helvetica", sans-serif;
+    color: $secondary-color;
+    font: $tertiary-font-size $tertiary-font;
   }
 }
 

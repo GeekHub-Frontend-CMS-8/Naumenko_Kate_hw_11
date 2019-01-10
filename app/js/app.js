@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".navigation").on("click","a", function (event) {
+    $(".navigation").on("click",'a[data-separate-page!="true"]', function (event) {
         event.preventDefault();
         var id  = $(this).attr("href"),
             top = $(id).offset().top;

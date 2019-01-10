@@ -35,10 +35,10 @@
 
   &__testimonial {
     padding: 20px 0;
-    font: 20px "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: 20px $primary-font;
     white-space: pre-line;
 
-    &:before {
+    &::before {
       position: relative;
       top: 35px;
       left: -15px;
@@ -48,7 +48,7 @@
       line-height: 0;
     }
 
-    &:after {
+    &::after {
       position: relative;
       top: 5px;
       left: 5px;
@@ -58,20 +58,10 @@
       line-height: 0;
     }
   }
-  //
-  //&__quote {
-  //  font-size: 93px;
-  //  line-height: 0;
-  //  white-space: pre;
-  //}
-  //
-  //&__left-quote {
-  //  transform: rotateY(180deg);
-  //}
 
   &__company {
     padding-top: 15px;
-    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: $primary-font-size $primary-font;
   }
 
   &__dots {
@@ -88,7 +78,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $tertiary-color;
     opacity: 0.5;
     margin: 1px;
   }
@@ -111,5 +101,4 @@ input#slide-3:checked ~ .small-carousel__dots label#slide-dot-3 {
     padding-top: 50px;
     border-bottom: 50px;
   }
-
 }

@@ -11,23 +11,21 @@
   &__date {
     padding: 5px 0 30px;
     border-bottom: 0;
-    color: #3e3d3d;
-    font-size: 14px;
+    color: $primary-color;
+    font-size: $primary-font-size;
   }
 
   &__paragraph { padding-right: 30px; }
 
-  &__reply-container {
-    text-align: right;
-  }
+  &__reply-container { text-align: right; }
 
   &__reply {
     width: 60px;
     margin: 50px 0 10px;
-    background-color: #e3e3e3;
-    color: #3e3d3d;
+    background-color: $secondary-color;
+    color: $primary-color;
     cursor: pointer;
-    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: $primary-font-size $primary-font;
     border: 0;
   }
 }

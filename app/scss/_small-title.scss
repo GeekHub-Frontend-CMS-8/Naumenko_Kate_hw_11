@@ -1,6 +1,6 @@
 .small-title {
-  color: #3e3d3d;
-  font: 13px/1.5 "Montserrat-SemiBold", "Helvetica", sans-serif;
+  color: $primary-color;
+  font: #{$tertiary-font-size}/1.5 $tertiary-font;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   white-space: pre-line;

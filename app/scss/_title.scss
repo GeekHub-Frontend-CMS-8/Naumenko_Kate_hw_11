@@ -1,8 +1,8 @@
 .title {
   position: relative;
   padding: 70px 0;
-  color: #3e3d3d;
-  font: 20px "Amsdam-Regular", "Helvetica", sans-serif;
+  color: $primary-color;
+  font: 20px $fourth-seniority-font;
   text-align: center;
 
   &::after {

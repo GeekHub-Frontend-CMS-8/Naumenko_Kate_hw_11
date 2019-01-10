@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: #ffffff;
+  background-color: $tertiary-color;
 
   &__row {
     width: 100%;
@@ -11,9 +11,7 @@
     align-items: center;
   }
 
-  &__social-icons {
-    display: none;
-  }
+  &__social-icons { display: none; }
 }
 
 @media only screen and (min-width: 948px) {
@@ -22,6 +20,7 @@
     &__social-icon {
       display: flex;
     }
+
     &__social-icon {
       align-items: center;
       justify-content: center;

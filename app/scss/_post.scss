@@ -20,7 +20,7 @@
   }
 
   &__topic {
-    color: #e3e3e3;
+    color: $secondary-color;
     letter-spacing: .9px;
     padding-bottom: 25px;
   }
@@ -47,7 +47,7 @@
 
 @media only screen and (min-width: 660px) {
   .post {
-    &__img { width: 50% }
+    &__img { width: 50%; }
 
     &__text {
       max-width: 330px;

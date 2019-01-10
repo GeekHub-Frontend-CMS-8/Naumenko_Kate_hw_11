@@ -4,14 +4,12 @@
 
   &__copyright {
     padding: 25px 0;
-    border-top: 1px solid #3e3e3e;
+    border-top: 1px solid $primary-color;
     color: #949494;
-    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: $primary-font-size $primary-font;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .footer__copyright {
-    padding: 40px 0;
-  }
+  .footer__copyright { padding: 40px 0; }
 }

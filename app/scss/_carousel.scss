@@ -25,20 +25,20 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: $tertiary-color;
   }
 
   &__above-title {
     width: 100%;
     padding-bottom: 25px;
-    font: 14px "CrimsonText-Roman", "Helvetica", sans-serif;
+    font: $primary-font-size $secondary-font;
     letter-spacing: 1.4px;
   }
 
   &__title {
     margin-bottom: 30px;
     padding: 35px 0;
-    font: 24px "Amsdam-Regular", "Helvetica", sans-serif;
+    font: 24px $fourth-seniority-font;
     background: url("../img/Line.png") no-repeat center;
   }
 
@@ -98,7 +98,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #fff;
+      background-color: $tertiary-color;
       border-radius: 50%;
     }
   }

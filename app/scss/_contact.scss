@@ -2,9 +2,7 @@
   padding: 55px 0;
   background-color: #292929;
 
-  &__logo-name {
-    color: #ffffff;
-  }
+  &__logo-name { color: $tertiary-color; }
 
   &__container {
     display: flex;
@@ -15,8 +13,5 @@
 }
 
 @media only screen and (min-width: 1175px) {
-  .contact__container {
-    justify-content: space-between;
-  }
+  .contact__container { justify-content: space-between; }
 }
-

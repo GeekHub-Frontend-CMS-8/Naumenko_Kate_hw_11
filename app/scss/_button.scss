@@ -2,17 +2,17 @@
   padding: 10px 30px;
   background-color: transparent;
   border: 2px solid;
-  font-family: "Montserrat-SemiBold", "Helvetica", sans-serif;
+  font-family: $tertiary-font;
   letter-spacing: 1.5px;
   
   &__light {
     border-color: #f2f2f2;
-    color: #fff;
+    color: $tertiary-color;
 
     &--hovered:hover {
-      border-color: #3e3d3d;
-      background-color: #fff;
-      color: #3e3d3d;
+      border-color: $primary-color;
+      background-color: $tertiary-color;
+      color: $primary-color;
       cursor: pointer;
     }
   }
@@ -26,15 +26,13 @@
   }
 
   &__dark {
-    border-color: #3e3d3d;
-    color: #3e3d3d;
+    border-color: $primary-color;
+    color: $primary-color;
 
     &--hovered:hover {
-      background-color: #3e3d3d;
+      background-color: $primary-color;
       color: #cecece;
       cursor: pointer;
     }
   }
-
-
 }

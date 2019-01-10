@@ -1,19 +1,15 @@
 .content:nth-last-child(2) .content__btn { margin-bottom: 70px; }
 
 .content {
-  &__img img {
-    max-width: 100%;
-  }
+  &__img img { max-width: 100%; }
 
-  &__topic {
-    font: 16px "Montserrat-Bold", "Helvetica", sans-serif;
-  }
+  &__topic { font: $secondary-font-size $fifth-seniority-font; }
 
   &__date {
     padding: 10px 0;
     border-bottom: 0;
-    color: #3e3d3d;
-    font-size: 14px;
+    color: $primary-color;
+    font-size: $primary-font-size;
   }
 
   &__group {
@@ -24,17 +20,15 @@
     border-bottom: 1px solid #b7b7b7;
   }
 
-  &__group-post {
-    justify-content: center;
-  }
+  &__group-post { justify-content: center; }
 
   &__group-item {
     margin: 0 5px;
     color: #818181;
-    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: $primary-font-size $primary-font;
   }
 
-  &__group-post-item{
+  &__group-post-item {
     width: 30px;
     height: 30px;
     display: flex;
@@ -44,55 +38,43 @@
     border-radius: 50%;
   }
 
-  &__text {
-    padding: 25px 0;
-  }
+  &__text { padding: 25px 0; }
 
   &__important-text {
     padding: 65px 50px 55px;
     border: 2px solid #a8a8a8;
-    font:700 16px/1.5 "CrimsonText-Italic", "Helvetica", sans-serif;
+    font: 700 #{$secondary-font-size}/1.5 $primary-font;
     letter-spacing: 1.6px;
   }
 
-  &__btn {
-    margin-bottom: 50px;
-  }
+  &__btn { margin-bottom: 50px; }
 
   &__pages {
     padding-bottom: 0;
     padding-top: 70px;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #3e3d3d;
+    border-top: 1px solid $primary-color;
   }
 
   &__page {
     padding: 10px 15px;
     margin-right: 5px;
-    border: 1px solid #3e3d3d;
-    color: #3e3d3d;
-    font: 14px "CrimsonText-Italic", "Helvetica", sans-serif;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    font: $primary-font-size $primary-font;
     text-decoration: none;
   }
 
-  &__form {
-    max-width: 815px;
-  }
+  &__form { max-width: 815px; }
 
-  &__list-input-item {
-    max-width: 390px;
-  }
+  &__list-input-item { max-width: 390px; }
 
   &__list-input-field {
-    &::placeholder {
-      color: #464646;
-    }
+    &::placeholder { color: #464646; }
   }
 }
 
 @media only screen and (min-width: 805px) {
-  .content__list-input-item:nth-last-child(2) {
-    max-width: 815px;
-  }
+  .content__list-input-item:nth-last-child(2) { max-width: 815px; }
 }

@@ -9,7 +9,7 @@
   }
 
   &__small-title {
-    color: #e3e3e3;
+    color: $secondary-color;
     white-space: pre-line;
   }
 
@@ -26,7 +26,5 @@
 }
 
 @media only screen and (min-width: 1175px) {
-  .contacts {
-    text-align: left;
-  }
+  .contacts { text-align: left; }
 }

@@ -1,13 +1,9 @@
 .prices {
-  background-color: #e3e3e3;
+  background-color: $secondary-color;
 
-  &__item {
-    margin: 15px 0;
-  }
+  &__item { margin: 15px 0; }
 }
 
 @media only screen and (min-width: 1145px) {
-  .prices__item {
-    margin: 0;
-  }
+  .prices__item { margin: 0; }
 }
